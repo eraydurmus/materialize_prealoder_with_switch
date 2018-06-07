@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  
+
+<head>
+                
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </head>
+  <body>
+      <div  id ="progress_container">
+          <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left"></div>
+          <div class="circle"></div>
+          <div class="gap-patch">
+          <div class="circle"></div></div>
+          <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+        <h5><span class="orange-text">Loading... </span></h5>
+  </div>
+        <div class ="container">
+          <div class="row">
+            <div class=" col s12 m8 center">
+              <h5><span class="red-text">Preloader Switch</span></h5>
+
+              <div class="switch">
+              <label>
+              Hide
+              <input type="checkbox"  checked="checked" onclick="toggleLiveData(this)">
+              <span class="lever"></span>
+              Show
+              </label>
+              </div>
+
+              <style>
+              
+              #progress_container{
+                  width: 90px;
+                  height: 90px;
+                  position: absolute;
+                  top:0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+            }
+
+              body
+                {
+                margin: 0;
+                padding: 0;
+                background: black;
+                }
+
+              </style>
+
+              <script>
+              
+              function toggleLiveData(checkbox) 
+        
+              {
+
+              if (checkbox.checked) 
+        
+              {
+
+              document.getElementById("progress_container").style.display = "block";
+
+              }
+
+              else 
+              {
+
+              document.getElementById("progress_container").style.display = "none";
+              }
+              
+              };
+              
+              
+              
+              
+              </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+</body>
